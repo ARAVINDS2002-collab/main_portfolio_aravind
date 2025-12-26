@@ -432,15 +432,13 @@
 			<div class="glass-card py-5 px-4 text-center">
 				<h3 class="mb-4" style="color: var(--primary);">Creative Portfolio</h3>
 				<p class="mb-5">Explore more of my work in Artificial Intelligence, UI/UX and Software Development.</p>
-				<div class="d-flex justify-content-center align-items-center flex-wrap">
-					<span class="mx-4 mb-3" style="font-size: 2.5rem; opacity: 0.5;"></span>
+				<div class="d-flex justify-content-center align-items-center flex-wrap" style="gap: 20px;">
 					<a href="https://aravinds2002-collab.github.io/uiux_portfolio/" target="_blank"
-						class="view-projects-btn mx-3 mb-3">
+						class="view-projects-btn">
 						<i class="fas fa-palette mr-2"></i> UI/UX Portfolio
 					</a>
-					<span class="mx-4 mb-3" style="font-size: 2.5rem; opacity: 0.5;"></span>
 					<a href="https://github.com/ARAVINDs2002?tab=repositories" target="_blank"
-						class="view-projects-btn mx-3 mb-3">
+						class="view-projects-btn">
 						<i class="fab fa-github mr-2"></i> Github Projects
 					</a>
 				</div>
@@ -709,20 +707,22 @@
 
 	<!-- footer -->
 	<div class="thank-you-container">
-		<video autoplay loop muted playsinline poster="video-poster.jpg">
+		<video autoplay loop muted playsinline poster="video-poster.jpg" id="bg-video">
 			<source src="images/pexels_videos_2541974 (1080p).mp4" type="video/mp4">
 			Your browser does not support the video tag.
 		</video>
-		<div class="content" data-aos="zoom-in">
-			<h1>Thank You!</h1>
-			<p class="lead text-white font-weight-bold mb-3">For visiting my personal portfolio.</p>
-			<p class="text-white-50 mb-0">Let's build something extraordinary together.</p>
+		<div class="overlay-gradient"></div>
+		<div class="content glass-card-large" data-aos="zoom-in" data-aos-duration="1200">
+			<h1 class="thank-you-title">Thank You!</h1>
+			<p class="lead font-weight-bold mb-4" style="font-size: 1.5rem; letter-spacing: 1px;">For visiting my
+				personal portfolio.</p>
+			<p class="mb-4" style="font-size: 1.1rem; opacity: 0.9;">Let's build something extraordinary together.</p>
 			<div class="d-flex justify-content-center align-items-center flex-wrap mt-4">
 				<a href="https://www.linkedin.com/in/aravind-s-32ba89308/" target="_blank"
-					class="linkedin-btn mr-3 mb-3">
+					class="linkedin-btn mx-3 mb-3">
 					<i class="fab fa-linkedin"></i> Connect on LinkedIn
 				</a>
-				<button id="downloadCVBtn" class="cv-download-btn mb-3">
+				<button id="downloadCVBtn" class="cv-download-btn mx-3 mb-3">
 					<i class="fas fa-download"></i> Download CV
 				</button>
 			</div>
@@ -731,22 +731,31 @@
 	<footer>
 		<div class="w3ls-footer-grids py-4">
 			<div class="container py-xl-5 py-lg-3">
-
+				<div class="footer-nav text-center">
+					<a href="#home" class="footer-link scroll mx-3">Home</a>
+					<a href="#about" class="footer-link scroll mx-3">About</a>
+					<a href="#skills" class="footer-link scroll mx-3">Skills</a>
+					<a href="#education" class="footer-link scroll mx-3">Career</a>
+					<a href="#awards" class="footer-link scroll mx-3">Honors</a>
+					<a href="#certificates" class="footer-link scroll mx-3">Certificates</a>
+					<a href="contact.html" class="footer-link mx-3">Contact</a>
+				</div>
 			</div>
-
-
 		</div>
-		<div class="row border-top mt-4 pt-lg-4 pt-3 text-lg-left text-center">
+		<div class="row border-top mt-4 pt-4 text-center justify-content-center">
 			<!-- copyright -->
-			<p class="col-lg-8 copy-right-grids mt-lg-1">© 2023 MY PORTFOLIO. All Rights Reserved |
-				Design
-				by
-				<a>ARAVIND S</a>
-			</p>
+			<div class="col-lg-8">
+				<p class="copy-right-grids text-white-50 mb-2">
+					&copy; 2025 ARAVIND S. All Rights Reserved.
+				</p>
+				<p class="mb-2" style="font-size: 0.9rem; opacity: 0.8;">
+					BCA Grad <span class="mx-2">|</span> MSc Computer Science (AI Specialization) Grad
+				</p>
+				<p style="font-size: 0.85rem; opacity: 0.6;">
+					Designed with <i class="fas fa-heart text-danger mx-1"></i> by ARAVIND S
+				</p>
+			</div>
 			<!-- //copyright -->
-			<!-- social icons -->
-
-			<!-- //social icons -->
 		</div>
 		</div>
 		</div>
