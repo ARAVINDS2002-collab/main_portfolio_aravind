@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>ARAVIND S | AI & UI/UX Specialist</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords" content="ARAVIND S, AI Developer, UI/UX Designer, Portfolio, Kerala" />
+	<script>
+		// Theme initialization
+		(function () {
+			const currentTheme = localStorage.getItem('theme') || 'light';
+			document.documentElement.setAttribute('data-theme', currentTheme);
+		})();
+
+		window.addEventListener("load", function () {
+			// Initialize AOS
+			if (typeof AOS !== 'undefined') {
+				AOS.init({
+					duration: 1000,
+					once: true,
+					offset: 100
+				});
+			}
+
+			// Initialize Particles based on current theme
+			const currentTheme = localStorage.getItem('theme') || 'light';
+			if (typeof initParticles === 'function') {
+				initParticles(currentTheme);
+			}
+		});
+	</script>
+	<!-- //Meta tag Keywords -->
+
+	<!-- Custom-Files -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Bootstrap-Core-CSS -->
+	<link rel="stylesheet" href="css/animation-aos.css">
+	<link href='css/aos.css' rel='stylesheet prefetch' type="text/css" media="all" />
+	<!-- animation css -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<!-- Style-CSS -->
+	<link rel="stylesheet" href="css/all.min.css">
+	<!-- Font-Awesome-Icons-CSS -->
+	<!-- //Custom-Files -->
+
+	<!-- Web-Fonts -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext"
+		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico&amp;subset=cyrillic,latin-ext,vietnamese"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700&display=swap" rel="stylesheet">
+	<!-- //Web-Fonts -->
+	<style>
+		.hero-section {
+			min-height: 100vh;
+			display: flex;
+			align-items: center;
+			padding-top: 100px;
+			background: radial-gradient(circle at top right, rgba(99, 102, 241, 0.1), transparent),
+				radial-gradient(circle at bottom left, rgba(6, 182, 212, 0.1), transparent);
+		}
+
+		.hero-image-wrapper {
+			position: relative;
+		}
+
+		.hero-image-wrapper::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 110%;
+			height: 110%;
+			background: conic-gradient(from 0deg, var(--primary), var(--secondary), var(--primary));
+			border-radius: 50%;
+			z-index: -1;
+			filter: blur(20px);
+			opacity: 0.3;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="main-content">
+		<!-- header -->
+		<header data-aos="fade-down" class="header-fixed">
+			<nav class="navbar navbar-expand-lg navbar-light glass-nav">
+				<div class="container">
+					<div class="logo text-left">
+						<h1>
+							<a class="navbar-brand custom-navbar" href="index.html">
+								<i class="fas fa-brain mr-2"></i> ARAVIND
+							</a>
+						</h1>
+					</div>
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation" style="border: none; outline: none;">
+						<i class="fas fa-bars" style="color: var(--text-light); font-size: 1.5rem;"></i>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-lg-auto text-lg-right text-center">
+							<li class="nav-item active">
+								<a class="nav-link" href="index.html">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link scroll" href="#about">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link scroll" href="#skills">Skills</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link scroll" href="#education">Career</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link scroll" href="#awards">Honors</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link scroll" href="#certificates">Certificates</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contact.html">Contact</a>
+							</li>
+							<li class="nav-item">
+								<button id="theme-toggle" class="theme-toggle" title="Toggle Theme">
+									<i class="fas fa-moon"></i>
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- //header -->
+
+		<!-- banner -->
+		<div class="hero-section d-flex align-items-center" style="min-height: 100vh;" id="home">
+			<div id="particles-js"></div>
+			<div class="container container-hero">
+				<div class="row align-items-center">
+					<div class="col-lg-7" data-aos="fade-right">
+						<span class="mytext1 uppercase mb-3">HELLO,
+							I AM</span>
+						<h2 class="hero-title mt-2 mb-3">
+							ARAVIND S</h2>
+						<h4 class="hero-subtitle mb-4">
+							AI Developer | UI/UX Designer | Front-end Developer</h4>
+						<p class="hero-text mb-5">
+							AI-driven product development, from intelligent algorithms to UI/UX design and front-end
+							implementation. Specializing in AI research, prompt engineering, and scalable web
+							interfaces.
+						</p>
+						<div class="button-w3ls d-flex align-items-center">
+							<a href="#projects" class="btn btn-lg animated-button thar-four scroll mr-4">View
+								Projects</a>
+							<a href="#about" class="scroll text-uppercase font-weight-bold"
+								style="letter-spacing: 1px; font-size: 0.9rem;">My Story <i
+									class="fas fa-arrow-right ml-2"></i></a>
+						</div>
+					</div>
+					<div class="col-lg-5" data-aos="zoom-in" data-aos-delay="200">
+						<div class="hero-image-wrapper text-center">
+							<img src="images/about.jpg" class="img-fluid rounded-circle shadow-lg hero-profile-img"
+								alt="Aravind S">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //banner -->
+	</div>
+	<!-- //main -->
+
+	<section class="bottom-banner-w3layouts py-5" id="about">
+		<div class="container py-5">
+			<div class="row align-items-center">
+				<div class="col-lg-5" data-aos="fade-right">
+					<div class="glass-card p-2">
+						<img src="images/aboutme2.jpg" class="img-fluid rounded shadow-lg" alt="About Me">
+					</div>
+				</div>
+				<div class="col-lg-7 feature pl-lg-5 mt-lg-0 mt-5" data-aos="fade-left">
+					<h3 class="title-wthree mb-4" style="color: var(--primary);">
+						<span class="mb-2 d-block"
+							style="color: var(--secondary); font-size: 0.9rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 600;">MY
+							STORY</span>
+						Crafting Intelligence with Purpose
+					</h3>
+					<div class="glass-card p-4">
+						<p style="text-align: justify;">
+							I'm Aravind S, a computer science specialist with a focus on Artificial Intelligence. My
+							journey in technology is driven by a desire to bridge the gap between complex AI models and
+							intuitive user experiences.
+						</p>
+						<p class="mt-3" style="text-align: justify;">
+
+
+							I recently completed my Master’s degree in Computer Science with an AI specialization,
+							achieving a CGPA of 8.94. During my postgraduate studies, I worked on AI-focused coursework
+							and research, which helped me develop a strong foundation in machine learning concepts,
+							prompt engineering, and modern front-end technologies.
+
+							As part of my PG program, I published a research paper titled “Saliency-Driven Transformer
+							Models for Deepfake Video Detection”, presented at the ICMLDE conference in Dehradun. I
+							completed my BCA with a CGPA of 77.06.
+
+							I am learning to effectively use AI tools for automation and content generation to improve
+							productivity and streamline development workflows. I’m particularly interested in growing at
+							the intersection of AI, UI/UX, and front-end development.Thus aiming to be an all rounder
+							capable of solving any problem.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- //banner bottom -->
+
+	<!-- services -->
+	<div class="graph py-5" id="skills">
+		<div class="container py-lg-5">
+			<div class="mb-5 text-center" data-aos="fade-down">
+				<h3 class="title-wthree mb-2" style="color: var(--primary);">Technical Skills</h3>
+				<p>Core Technologies & Tools I Work With</p>
+			</div>
+
+			<div class="row justify-content-center">
+
+				<!-- Programming -->
+				<div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up">
+					<div class="glass-card h-100 p-4">
+						<div class="text-center mb-4">
+							<div class="icon-box mx-auto mb-3"
+								style="width:60px;height:60px;background:rgba(99,102,241,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;">
+								<i class="fas fa-code" style="font-size:1.5rem;color:var(--primary);"></i>
+							</div>
+							<h5 style="color: var(--primary); font-weight: 600;">Programming</h5>
+						</div>
+
+						<div class="skills-list"
+							style="display:flex;flex-wrap:wrap;justify-content:center;text-align:center;gap:6px;">
+							<span class="skill-badge">Python,</span>
+							<span class="skill-badge">JavaScript,</span>
+							<span class="skill-badge">C / C++</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- AI & ML -->
+				<div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up" data-aos-delay="100">
+					<div class="glass-card h-100 p-4">
+						<div class="text-center mb-4">
+							<div class="icon-box mx-auto mb-3"
+								style="width:60px;height:60px;background:rgba(6,182,212,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;">
+								<i class="fas fa-brain" style="font-size:1.5rem;color:var(--secondary);"></i>
+							</div>
+							<h5 style="color: var(--secondary); font-weight: 600;">AI & ML</h5>
+						</div>
+
+						<div class="skills-list"
+							style="display:flex;flex-wrap:wrap;justify-content:center;text-align:center;gap:6px;">
+							<span class="skill-badge">Machine Learning,</span>
+							<span class="skill-badge">Deep Learning,</span>
+							<span class="skill-badge">LLMs & NLP,</span>
+							<span class="skill-badge">Prompt Engineering,</span>
+							<span class="skill-badge">NumPy / Pandas</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Frontend & Design -->
+				<div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up" data-aos-delay="200">
+					<div class="glass-card h-100 p-4">
+						<div class="text-center mb-4">
+							<div class="icon-box mx-auto mb-3"
+								style="width:60px;height:60px;background:rgba(244,63,94,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;">
+								<i class="fas fa-palette" style="font-size:1.5rem;color:var(--accent);"></i>
+							</div>
+							<h5 style="color: var(--accent); font-weight: 600;">Frontend & UI/UX</h5>
+						</div>
+
+						<div class="skills-list"
+							style="display:flex;flex-wrap:wrap;justify-content:center;text-align:center;gap:6px;">
+							<span class="skill-badge">React.js,</span>
+							<span class="skill-badge">Tailwind CSS,</span>
+							<span class="skill-badge">Figma,</span>
+							<span class="skill-badge">Adobe Expertise,</span>
+							<span class="skill-badge">Canva,</span>
+							<span class="skill-badge">HTML5 / CSS3,</span>
+
+						</div>
+					</div>
+				</div>
+
+				<!-- Generative AI Tools -->
+				<div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up" data-aos-delay="300">
+					<div class="glass-card h-100 p-4">
+						<div class="text-center mb-4">
+							<div class="icon-box mx-auto mb-3"
+								style="width:60px;height:60px;background:rgba(99,102,241,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;">
+								<i class="fas fa-brain" style="font-size:1.5rem;color:var(--primary);"></i>
+							</div>
+							<h5 style="color: var(--primary); font-weight: 600;">Generative AI Tools</h5>
+						</div>
+
+						<div class="skills-list"
+							style="display:flex;flex-wrap:wrap;justify-content:center;text-align:center;gap:6px;">
+							<span class="skill-badge">Image Generation Tools,</span>
+							<span class="skill-badge">LLM Usage & Prompting,</span>
+							<span class="skill-badge">Local Model Execution,</span>
+							<span class="skill-badge">Video Generation Tools</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Dev Tools -->
+				<div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up" data-aos-delay="400">
+					<div class="glass-card h-100 p-4">
+						<div class="text-center mb-4">
+							<div class="icon-box mx-auto mb-3"
+								style="width:60px;height:60px;background:rgba(6,182,212,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;">
+								<i class="fas fa-terminal" style="font-size:1.5rem;color:var(--secondary);"></i>
+							</div>
+							<h5 style="color: var(--secondary); font-weight: 600;">Dev Tools</h5>
+						</div>
+
+						<div class="skills-list"
+							style="display:flex;flex-wrap:wrap;justify-content:center;text-align:center;gap:6px;">
+							<span class="skill-badge">Git / GitHub,</span>
+							<span class="skill-badge">Docker,</span>
+							<span class="skill-badge">Linux,</span>
+							<span class="skill-badge">Cursor / Antigravity</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Fundamentals -->
+				<div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up" data-aos-delay="500">
+					<div class="glass-card h-100 p-4">
+						<div class="text-center mb-4">
+							<div class="icon-box mx-auto mb-3"
+								style="width:60px;height:60px;background:rgba(244,63,94,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;">
+								<i class="fas fa-lightbulb" style="font-size:1.5rem;color:var(--accent);"></i>
+							</div>
+							<h5 style="color: var(--accent); font-weight: 600;">Fundamentals</h5>
+						</div>
+
+						<div class="skills-list"
+							style="display:flex;flex-wrap:wrap;justify-content:center;text-align:center;gap:6px;">
+							<span class="skill-badge">Data Structures,</span>
+							<span class="skill-badge">Problem Solving,</span>
+							<span class="skill-badge">Clean Code,</span>
+							<span class="skill-badge">Debugging</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- //skills -->
+
+
+	<div class="info-w3layouts" id="education">
+		<div class="container py-lg-5">
+
+			<!-- education -->
+			<div class="mb-5 text-center" data-aos="fade-up">
+				<h3 class="title-wthree mb-2" style="color: var(--primary);">
+					Academic Journey
+				</h3>
+				<p>Education & Learning Milestones</p>
+
+			</div>
+
+			<div class="row">
+				<div class="col-lg-6 mb-5" data-aos="fade-up">
+					<div class="glass-card p-5 h-100">
+						<div class="pl-4 mb-5" style="border-left: 5px solid var(--primary);">
+							<i class="fas fa-graduation-cap mb-2" style="font-size: 2rem; color: var(--primary);"></i>
+							<h4 class="aboutbtm-head">Academia</h4>
+						</div>
+						<div class="grids-agiles-one mb-4">
+							<h5 class="mb-2" style="color: var(--primary);">M.Sc Computer Science (AI)</h5>
+							<p>Karyavattom Campus <span class="mx-2">|</span> 2023 - 2025</p>
+							<p class="font-weight-bold" style="color: var(--secondary);">8.94 CGPA</p>
+						</div>
+						<div class="grids-agiles-one mb-4">
+							<h5 class="mb-2" style="color: var(--primary);">Bachelor of Computer Applications</h5>
+							<p>UIT Kanjiramkulam <span class="mx-2">|</span> 2020 - 2023</p>
+							<p class="font-weight-bold" style="color: var(--secondary);">7.706 CGPA</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="200">
+					<div class="glass-card p-5 h-100">
+						<div class="pl-4 mb-5" style="border-left: 5px solid var(--secondary);">
+							<i class="fas fa-briefcase mb-2" style="font-size: 2rem; color: var(--secondary);"></i>
+							<h4 class="aboutbtm-head">Experience</h4>
+						</div>
+						<div class="grids-agiles-one mb-4">
+							<h5 class="mb-2" style="color: var(--primary);">Software Developer</h5>
+							<p>Creative App Lab <span class="mx-2">|</span> Aug 2025 - Present</p>
+							<p class="small">Technopark, Trivandrum</p>
+						</div>
+						<div class="grids-agiles-one">
+							<h5 class="mb-2" style="color: var(--primary);">UI/UX Intern</h5>
+							<p>Creative App Lab <span class="mx-2">|</span> March - July 2025</p>
+							<p class="small">Technopark, Trivandrum</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<!-- //facts -->
+
+	<div class="project-view-all py-5" id="projects">
+		<div class="container py-lg-5">
+			<div class="glass-card py-5 px-4 text-center">
+				<h3 class="mb-4" style="color: var(--primary);">Creative Portfolio</h3>
+				<p class="mb-5">Explore more of my work in Artificial Intelligence, UI/UX and Software Development.</p>
+				<div class="d-flex justify-content-center align-items-center flex-wrap">
+					<span class="mx-4 mb-3" style="font-size: 2.5rem; opacity: 0.5;"></span>
+					<a href="https://aravinds2002-collab.github.io/uiux_portfolio/" target="_blank"
+						class="view-projects-btn mx-3 mb-3">
+						<i class="fas fa-palette mr-2"></i> UI/UX Portfolio
+					</a>
+					<span class="mx-4 mb-3" style="font-size: 2.5rem; opacity: 0.5;"></span>
+					<a href="https://github.com/ARAVINDs2002?tab=repositories" target="_blank"
+						class="view-projects-btn mx-3 mb-3">
+						<i class="fab fa-github mr-2"></i> Github Projects
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //projects -->
+
+	</section>
+
+
+
+
+
+
+	<section class="py-5" id="strengths">
+		<div class="container py-lg-5">
+			<div class="mb-5 text-center" data-aos="fade-up">
+				<h3 class="title-wthree mb-2" style="color: var(--primary);">Professional Strengths</h3>
+				<p>Core Attributes that Drive Results</p>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+					<div class="glass-card p-5 text-center h-100">
+						<div class="icon-box mb-3 mx-auto"
+							style="width: 70px; height: 70px; background: rgba(99,102,241,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+							<i class="fas fa-code-branch" style="font-size: 1.8rem; color: var(--primary);"></i>
+						</div>
+						<h5 class="mb-3">Tech Specialist</h5>
+						<p>Strong foundation in AI, Python, DBMS & SQL, C/C++, HTML, CSS, JavaScript frameworks .</p>
+
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+					<div class="glass-card p-5 text-center h-100">
+						<div class="icon-box mb-3 mx-auto"
+							style="width: 70px; height: 70px; background: rgba(6,182,212,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+							<i class="fas fa-handshake" style="font-size: 1.8rem; color: var(--secondary);"></i>
+						</div>
+						<h5 class="mb-3">Communicator</h5>
+						<p>Explaining technical ideas in a way non-technical people can understand.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+					<div class="glass-card p-5 text-center h-100">
+						<div class="icon-box mb-3 mx-auto"
+							style="width: 70px; height: 70px; background: rgba(244,63,94,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+							<i class="fas fa-users" style="font-size: 1.8rem; color: var(--accent);"></i>
+						</div>
+						<h5 class="mb-3">Team Player</h5>
+						<p>Thriving in agile environments and cross-functional teams.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+					<div class="glass-card p-5 text-center h-100">
+						<div class="icon-box mb-3 mx-auto"
+							style="width: 70px; height: 70px; background: rgba(99,102,241,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+							<i class="fas fa-clock" style="font-size: 1.8rem; color: var(--primary);"></i>
+						</div>
+						<h5 class="mb-3">Efficiency</h5>
+						<p>Prioritizing tasks to meet tight deadlines under pressure.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+					<div class="glass-card p-5 text-center h-100">
+						<div class="icon-box mb-3 mx-auto"
+							style="width: 70px; height: 70px; background: rgba(6,182,212,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+							<i class="fas fa-sync-alt" style="font-size: 1.8rem; color: var(--secondary);"></i>
+						</div>
+						<h5 class="mb-3">Adaptability</h5>
+						<p>Quick to master new technologies and breakthroughs.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+					<div class="glass-card p-5 text-center h-100">
+						<div class="icon-box mb-3 mx-auto"
+							style="width: 70px; height: 70px; background: rgba(244,63,94,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+							<i class="fas fa-shield-alt" style="font-size: 1.8rem; color: var(--accent);"></i>
+						</div>
+						<h5 class="mb-3">Reliability</h5>
+						<p>Commitment to data integrity and ethical standards.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- heading title -->
+	<section class="py-5" id="awards">
+		<div class="container py-lg-5">
+			<div class="mb-5 text-center" data-aos="fade-down">
+				<h3 class="title-wthree mb-2" style="color: var(--secondary);">Awards & Recognition</h3>
+				<p>Milestones in the Tech Journey</p>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 mb-4" data-aos="fade-right">
+					<div class="glass-card p-5 h-100 d-flex align-items-center">
+						<div class="mr-4" style="font-size: 3rem; color: var(--primary);"><i class="fas fa-award"></i>
+						</div>
+						<div>
+							<h5 class="mb-2">Publication</h5>
+							<p>Paper presented at <strong>ICMLDE</strong> International Conference at Dehradun titled
+								<em>"Saliency Driven Transformer Models for Deepfake Video Detection"</em>.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 mb-4" data-aos="fade-left">
+					<div class="glass-card p-5 h-100 d-flex align-items-center">
+						<div class="mr-4" style="font-size: 3rem; color: var(--secondary);"><i
+								class="fas fa-graduation-cap"></i></div>
+						<div>
+							<h5 class="mb-2">PhD Eligibility</h5>
+							<p>Eligible for doing PhD for 2025 and 2026 via National Eligibility Test.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 mb-4" data-aos="fade-right">
+					<div class="glass-card p-5 h-100 d-flex align-items-center">
+						<div class="mr-4" style="font-size: 3rem; color: var(--accent);"><i class="fas fa-trophy"></i>
+						</div>
+						<div>
+							<h5 class="mb-2">Coding Practice</h5>
+							<p>Completed <strong>Coding Bat Python</strong> challenges.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 mb-4" data-aos="fade-left">
+					<div class="glass-card p-5 h-100 d-flex align-items-center">
+						<div class="mr-4" style="font-size: 3rem; color: var(--primary);"><i class="fas fa-users"></i>
+						</div>
+						<div>
+							<h5 class="mb-2">Social Responsibility</h5>
+							<p>Active participation in Student Police Cadet volunteer program.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- //awards -->
+
+	<!-- certificates -->
+	<section class="py-5" id="certificates">
+		<div class="container py-lg-5">
+			<div class="mb-5 text-center" data-aos="fade-down">
+				<h3 class="title-wthree mb-2" style="color: var(--primary);">Professional Certifications</h3>
+				<p>Validating Expertise & Commitment</p>
+			</div>
+			<div class="row gallery">
+				<!-- Research Paper - Featured First -->
+				<div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in">
+					<div class="glass-card cert-card p-2">
+						<a href="images/research.png" class="b-link-stripe b-animate-go thickbox">
+							<img src="images/research.png" alt="Research Publication" class="img-fluid rounded" />
+							<div class="cert-overlay">
+								<div class="cert-view-btn"><i class="fas fa-search-plus"></i></div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in">
+					<div class="glass-card cert-card p-2">
+						<a href="images/cer1.jpg" class="b-link-stripe b-animate-go thickbox">
+							<img src="images/cer1.jpg" alt="Certification" class="img-fluid rounded" />
+							<div class="cert-overlay">
+								<div class="cert-view-btn"><i class="fas fa-search-plus"></i></div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+					<div class="glass-card cert-card p-2">
+						<a href="images/cer2.jpg" class="b-link-stripe b-animate-go thickbox">
+							<img src="images/cer2.jpg" alt="Certification" class="img-fluid rounded" />
+							<div class="cert-overlay">
+								<div class="cert-view-btn"><i class="fas fa-search-plus"></i></div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+					<div class="glass-card cert-card p-2">
+						<a href="images/cer3.jpg" class="b-link-stripe b-animate-go thickbox">
+							<img src="images/cer3.jpg" alt="Certification" class="img-fluid rounded" />
+							<div class="cert-overlay">
+								<div class="cert-view-btn"><i class="fas fa-search-plus"></i></div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
+					<div class="glass-card cert-card p-2">
+						<a href="images/cer4.jpg" class="b-link-stripe b-animate-go thickbox">
+							<img src="images/cer4.jpg" alt="Certification" class="img-fluid rounded" />
+							<div class="cert-overlay">
+								<div class="cert-view-btn"><i class="fas fa-search-plus"></i></div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="400">
+					<div class="glass-card cert-card p-2">
+						<a href="images/cer5.jpg" class="b-link-stripe b-animate-go thickbox">
+							<img src="images/cer5.jpg" alt="Certification" class="img-fluid rounded" />
+							<div class="cert-overlay">
+								<div class="cert-view-btn"><i class="fas fa-search-plus"></i></div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="500">
+					<div class="glass-card cert-card p-2">
+						<a href="images/cer6.jpg" class="b-link-stripe b-animate-go thickbox">
+							<img src="images/cer6.jpg" alt="Certification" class="img-fluid rounded" />
+							<div class="cert-overlay">
+								<div class="cert-view-btn"><i class="fas fa-search-plus"></i></div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="600">
+					<div class="glass-card cert-card p-2">
+						<a href="images/cer8.jpg" class="b-link-stripe b-animate-go thickbox">
+							<img src="images/cer8.jpg" alt="Certification" class="img-fluid rounded" />
+							<div class="cert-overlay">
+								<div class="cert-view-btn"><i class="fas fa-search-plus"></i></div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="700">
+					<div class="glass-card cert-card p-2">
+						<a href="images/cer9.jpg" class="b-link-stripe b-animate-go thickbox">
+							<img src="images/cer9.jpg" alt="Certification" class="img-fluid rounded" />
+							<div class="cert-overlay">
+								<div class="cert-view-btn"><i class="fas fa-search-plus"></i></div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="800">
+					<div class="glass-card cert-card p-2">
+						<a href="images/cer10.png" class="b-link-stripe b-animate-go thickbox">
+							<img src="images/cer10.png" alt="Certification" class="img-fluid rounded" />
+							<div class="cert-overlay">
+								<div class="cert-view-btn"><i class="fas fa-search-plus"></i></div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="900">
+					<div class="glass-card cert-card p-2">
+						<a href="images/cer11.png" class="b-link-stripe b-animate-go thickbox">
+							<img src="images/cer11.png" alt="Certification" class="img-fluid rounded" />
+							<div class="cert-overlay">
+								<div class="cert-view-btn"><i class="fas fa-search-plus"></i></div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- footer -->
+	<div class="thank-you-container">
+		<video autoplay loop muted playsinline poster="video-poster.jpg">
+			<source src="images/pexels_videos_2541974 (1080p).mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<div class="content" data-aos="zoom-in">
+			<h1>Thank You!</h1>
+			<p class="lead text-white font-weight-bold mb-3">For visiting my personal portfolio.</p>
+			<p class="text-white-50 mb-0">Let's build something extraordinary together.</p>
+			<div class="d-flex justify-content-center align-items-center flex-wrap mt-4">
+				<a href="https://www.linkedin.com/in/aravind-s-32ba89308/" target="_blank"
+					class="linkedin-btn mr-3 mb-3">
+					<i class="fab fa-linkedin"></i> Connect on LinkedIn
+				</a>
+				<button id="downloadCVBtn" class="cv-download-btn mb-3">
+					<i class="fas fa-download"></i> Download CV
+				</button>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="w3ls-footer-grids py-4">
+			<div class="container py-xl-5 py-lg-3">
+
+			</div>
+
+
+		</div>
+		<div class="row border-top mt-4 pt-lg-4 pt-3 text-lg-left text-center">
+			<!-- copyright -->
+			<p class="col-lg-8 copy-right-grids mt-lg-1">© 2023 MY PORTFOLIO. All Rights Reserved |
+				Design
+				by
+				<a>ARAVIND S</a>
+			</p>
+			<!-- //copyright -->
+			<!-- social icons -->
+
+			<!-- //social icons -->
+		</div>
+		</div>
+		</div>
+	</footer>
+	<!-- //footer -->
+
+
+	<!-- Js files -->
+	<!-- JavaScript -->
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<!-- Default-JavaScript-File -->
+
+	<!-- scripts required  for particle effect -->
+	<script src='js/particles.min.js'></script>
+	<script src="js/particles.js"></script>
+	<!-- //scripts required for particle effect -->
+
+	<!-- chart -->
+	<script src='js/amcharts.js'></script>
+	<script src='js/chart.js'></script>
+	<!-- //chart -->
+	<!-- //gallery-js -->
+
+	<!-- stats -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.countup.js"></script>
+	<script>
+		$('.counter').countUp();
+	</script>
+	<!-- //stats -->
+
+	<!-- flexSlider (for testimonials) -->
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+	<script defer src="js/jquery.flexslider.js"></script>
+	<script>
+		$(window).load(function () {
+			$('.flexslider').flexslider({
+				animation: "slide",
+				start: function (slider) {
+					$('body').removeClass('loading');
+				}
+			});
+		});
+	</script>
+	<!-- //flexSlider (for testimonials) -->
+
+	<!-- animation js -->
+	<script src='js/aos.js'></script>
+	<script>
+		$(document).ready(function () {
+			AOS.init({
+				easing: 'ease-out-back',
+				duration: 1000,
+				once: true,
+				offset: 100
+			});
+		});
+	</script>
+	<!-- //animation js -->
+
+	<!-- smooth scrolling -->
+	<script src="js/SmoothScroll.min.js"></script>
+	<!-- move-top -->
+	<script src="js/move-top.js"></script>
+	<!-- easing -->
+	<script src="js/easing.js"></script>
+	<!--  necessary snippets for few javascript files -->
+	<script src="js/online-resume.js"></script>
+
+	<script src="js/bootstrap.js"></script>
+	<!-- Necessary-JavaScript-File-For-Bootstrap -->
+
+	<!-- gallery -->
+	<script src="js/jquery.chocolat.js"></script>
+	<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen">
+	<!-- light-box -->
+	<script>
+		$(function () {
+			$('.gallery a').Chocolat();
+		});
+	</script>
+	<!-- //light-box -->
+	<!-- //gallery -->
+	<!-- //Js files -->
+
+	<script>
+		// Theme Toggle Handler
+		const themeToggle = document.getElementById('theme-toggle');
+		const htmlElement = document.documentElement;
+
+		if (themeToggle) {
+			themeToggle.addEventListener('click', () => {
+				const currentTheme = htmlElement.getAttribute('data-theme');
+				const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+
+				htmlElement.setAttribute('data-theme', newTheme);
+				localStorage.setItem('theme', newTheme);
+
+				// Update icon
+				const icon = themeToggle.querySelector('i');
+				if (icon) {
+					icon.classList.toggle('fa-moon');
+					icon.classList.toggle('fa-sun');
+				}
+			});
+
+			// Set initial icon
+			const savedTheme = localStorage.getItem('theme') || 'light';
+			const icon = themeToggle.querySelector('i');
+			if (icon) {
+				if (savedTheme === 'dark') {
+					icon.classList.replace('fa-moon', 'fa-sun');
+				} else {
+					icon.classList.replace('fa-sun', 'fa-moon');
+				}
+			}
+		}
+	</script>
+
+	<!-- CV Download Modal -->
+	<div id="cvModal" class="cv-modal">
+		<div class="cv-modal-content">
+			<span class="cv-modal-close">&times;</span>
+			<h3 class="mb-4 text-center" style="color: var(--primary);">Choose Your CV</h3>
+			<p class="text-center mb-4" style="opacity: 0.8;">Select the resume that best matches your interest</p>
+			<div class="cv-options">
+				<button class="cv-option-btn" data-cv="uiux">
+					<i class="fas fa-palette"></i>
+					<span>UI/UX Designer</span>
+				</button>
+				<button class="cv-option-btn" data-cv="ai">
+					<i class="fas fa-brain"></i>
+					<span>AI Developer</span>
+				</button>
+				<button class="cv-option-btn" data-cv="sde">
+					<i class="fas fa-code"></i>
+					<span>Software Developer</span>
+				</button>
+				<button class="cv-option-btn cv-all-btn" data-cv="all">
+					<i class="fas fa-download"></i>
+					<span>Download All</span>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		// CV Download Functionality
+		const cvLinks = {
+			uiux: 'images/Aravind UIUX.pdf',
+			ai: 'images/Aravind AI.pdf',
+			sde: 'images/Aravind SDE.pdf'
+		};
+
+		const modal = document.getElementById('cvModal');
+		const downloadBtn = document.getElementById('downloadCVBtn');
+		const closeBtn = document.querySelector('.cv-modal-close');
+		const cvOptionBtns = document.querySelectorAll('.cv-option-btn');
+
+		// Open modal
+		if (downloadBtn) {
+			downloadBtn.addEventListener('click', () => {
+				modal.style.display = 'flex';
+			});
+		}
+
+		// Close modal
+		if (closeBtn) {
+			closeBtn.addEventListener('click', () => {
+				modal.style.display = 'none';
+			});
+		}
+
+		// Close modal when clicking outside
+		window.addEventListener('click', (e) => {
+			if (e.target === modal) {
+				modal.style.display = 'none';
+			}
+		});
+
+		// Download CV function - uses fetch to avoid permission issues
+		async function downloadCV(url, filename) {
+			try {
+				// Fetch the file
+				const response = await fetch(url);
+				const arrayBuffer = await response.arrayBuffer();
+				const blob = new Blob([arrayBuffer], { type: 'application/pdf' });
+
+				// Create a temporary URL for the blob
+				const blobUrl = window.URL.createObjectURL(blob);
+
+				// Create and trigger download
+				const link = document.createElement('a');
+				link.href = blobUrl;
+				link.download = filename;
+				link.style.display = 'none';
+				document.body.appendChild(link);
+				link.click();
+
+				// Cleanup
+				document.body.removeChild(link);
+				window.URL.revokeObjectURL(blobUrl);
+			} catch (error) {
+				console.error('Download failed:', error);
+				// Fallback to direct link
+				window.open(url, '_blank');
+			}
+		}
+
+		// Handle CV selection
+		cvOptionBtns.forEach(btn => {
+			btn.addEventListener('click', () => {
+				const cvType = btn.getAttribute('data-cv');
+
+				if (cvType === 'all') {
+					// Download all CVs
+					setTimeout(() => downloadCV(cvLinks.uiux, 'Aravind_UIUX.pdf'), 100);
+					setTimeout(() => downloadCV(cvLinks.ai, 'Aravind_AI.pdf'), 500);
+					setTimeout(() => downloadCV(cvLinks.sde, 'Aravind_SDE.pdf'), 900);
+				} else {
+					// Download selected CV
+					const filename = `Aravind_${cvType.toUpperCase()}.pdf`;
+					downloadCV(cvLinks[cvType], filename);
+				}
+
+				// Close modal after selection
+				setTimeout(() => {
+					modal.style.display = 'none';
+				}, 1000);
+			});
+		});
+	</script>
+</body>
+
+
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Contact | ARAVIND S</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords" content="ARAVIND S, Contact, AI Developer, UI/UX Designer" />
+	<script>
+		(function () {
+			const currentTheme = localStorage.getItem('theme') || 'light';
+			document.documentElement.setAttribute('data-theme', currentTheme);
+		})();
+	</script>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/animation-aos.css">
+	<link href='css/aos.css' rel='stylesheet' type="text/css" media="all" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/all.min.css">
+	<link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Inter:400,500,600,700&display=swap" rel="stylesheet">
+	<style>
+		.contact-hero {
+			padding-top: 150px;
+			padding-bottom: 50px;
+			background: radial-gradient(circle at top right, rgba(99, 102, 241, 0.1), transparent);
+		}
+
+		.address-info {
+			background: var(--glass-bg);
+			backdrop-filter: blur(10px);
+			border: 1px solid var(--glass-border);
+			border-radius: 20px;
+			padding: 2.5rem;
+			height: 100%;
+			transition: var(--transition);
+		}
+
+		.address-info:hover {
+			transform: translateY(-5px);
+			border-color: var(--primary);
+		}
+
+		.contact-icon {
+			font-size: 2.5rem;
+			margin-bottom: 1.5rem;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="main-content">
+		<header data-aos="fade-down" class="header-fixed">
+			<nav class="navbar navbar-expand-lg navbar-light glass-nav">
+				<div class="container">
+					<div class="logo text-left">
+						<h1>
+							<a class="navbar-brand custom-navbar" href="index.html">
+								<i class="fas fa-brain mr-2"></i> ARAVIND
+							</a>
+						</h1>
+					</div>
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-lg-auto text-lg-right text-center">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="index.html#about">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="index.html#skills">Skills</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="index.html#education">Career</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="index.html#projects">Projects</a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link" href="contact.html">Contact</a>
+							</li>
+							<li class="nav-item">
+								<button id="theme-toggle" class="theme-toggle" title="Toggle Theme">
+									<i class="fas fa-moon"></i>
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<section class="contact-hero text-center" data-aos="fade-in">
+			<div class="container">
+				<h2 class="mb-3" style="font-size: 3.5rem; color: var(--primary);">Get In Touch</h2>
+				<p style="color: var(--text-dark);">Let's collaborate on something extraordinary.</p>
+			</div>
+		</section>
+	</div>
+
+	<section class="py-5">
+		<div class="container py-lg-5">
+			<div class="row">
+				<div class="col-lg-4 mb-4" data-aos="fade-up">
+					<div class="address-info text-center">
+						<div class="contact-icon" style="color: var(--primary);"><i class="fas fa-map-marker-alt"></i>
+						</div>
+						<h5 class="mb-3">Location</h5>
+						<p>Trivandrum, Kerala, India</p>
+					</div>
+				</div>
+				<div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+					<div class="address-info text-center">
+						<div class="contact-icon" style="color: var(--secondary);"><i class="fas fa-envelope"></i></div>
+						<h5 class="mb-3">Email</h5>
+						<p><a href="mailto:aravindofficial2023@gmail.com">aravindofficial2023@gmail.com</a></p>
+					</div>
+				</div>
+				<div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+					<div class="address-info text-center">
+						<div class="contact-icon" style="color: var(--accent);"><i class="fas fa-address-card"></i>
+						</div>
+						<h5 class="mb-3">LinkedIn</h5>
+						<p><a href="https://www.linkedin.com/in/aravind-s-32ba89308/" target="_blank">Connect with
+								me</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="w3ls-footer-grids py-4">
+			<div class="container py-xl-5 py-lg-3">
+				<div class="row">
+					<div class="col-lg-5 w3l-footer-logo">
+						<a class="navbar-brand" href="index.html"><i class="fas fa-brain mr-2"></i> ARAVIND</a>
+					</div>
+					
+				</div>
+				<div class="row border-top mt-4 pt-lg-4 pt-3 text-lg-left text-center">
+					<p class="col-lg-8 copy-right-grids mt-lg-1">© 2023 ARAVIND S. All Rights Reserved.</p>
+					
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<script src='js/aos.js'></script>
+	<script>
+		$(document).ready(function () {
+			AOS.init({
+				easing: 'ease-out-back',
+				duration: 1000,
+				once: true,
+				offset: 100
+			});
+		});
+
+		const themeToggle = document.getElementById('theme-toggle');
+		const htmlElement = document.documentElement;
+
+		if (themeToggle) {
+			themeToggle.addEventListener('click', () => {
+				const currentTheme = htmlElement.getAttribute('data-theme');
+				const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+				htmlElement.setAttribute('data-theme', newTheme);
+				localStorage.setItem('theme', newTheme);
+				const icon = themeToggle.querySelector('i');
+				if (icon) {
+					icon.classList.toggle('fa-moon');
+					icon.classList.toggle('fa-sun');
+				}
+			});
+			const savedTheme = localStorage.getItem('theme') || 'light';
+			const icon = themeToggle.querySelector('i');
+			if (icon && savedTheme === 'dark') {
+				icon.classList.replace('fa-moon', 'fa-sun');
+			}
+		}
+	</script>
+	<script src="js/bootstrap.js"></script>
+</body>
+
+
+</html>
+
